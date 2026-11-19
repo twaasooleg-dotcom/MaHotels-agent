@@ -1,0 +1,115 @@
+{
+  "site_url": "https://mahotels.net",
+  "wp_username": "ma_news_agent",
+  "tag_id": null,
+  "category_ids": [
+    7
+  ],
+  "timezone": "Africa/Cairo",
+  "cycle_days": 1,
+  "topics_per_cycle": 3,
+  "run_hour": 6,
+  "max_topic_candidates": 18,
+  "publish_hours": [
+    12,
+    14,
+    18
+  ],
+  "first_publish_date": null,
+  "auto_schedule": true,
+  "free_only": true,
+  "image_size": [
+    1024,
+    1024
+  ],
+  "min_article_words": 1500,
+  "max_article_words": 2000,
+  "max_revisions": 3,
+  "max_run_minutes": 240,
+  "automatic_resumes": false,
+  "wp_min_interval_seconds": 3,
+  "wp_max_requests_per_run": 100,
+  "archive_page_size": 100,
+  "archive_pages_per_run": 100,
+  "archive_incremental_pages_per_run": 3,
+  "groq_model": "openai/gpt-oss-120b",
+  "gemini_model": "gemini-3.8-flash",
+  "image_model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "source_hosts": [
+    "ehl.edu",
+    "hospitalitynet.org",
+    "hftp.org",
+    "ahla.com",
+    "gstcouncil.org",
+    "unwto.org",
+    "untourism.int",
+    "str.com"
+  ],
+  "limits": {
+    "groq": {
+      "requests": 150,
+      "tokens": 180000,
+      "images": 0,
+      "min_interval_seconds": 65,
+      "max_request_tokens": 7600
+    },
+    "gemini": {
+      "requests": 50,
+      "tokens": 200000,
+      "images": 0,
+      "min_interval_seconds": 15,
+      "max_request_tokens": 60000
+    },
+    "cloudflare": {
+      "requests": 30,
+      "tokens": 0,
+      "images": 30,
+      "min_interval_seconds": 10,
+      "max_request_tokens": 0
+    },
+    "cloudflare_text": {
+      "requests": 80,
+      "tokens": 450000,
+      "images": 0,
+      "min_interval_seconds": 5,
+      "max_request_tokens": 30000
+    },
+    "cloudflare_vision": {
+      "requests": 6,
+      "tokens": 150000,
+      "images": 0,
+      "min_interval_seconds": 5,
+      "max_request_tokens": 30000
+    }
+  },
+  "cloudflare_fallback": {
+    "enabled": true,
+    "text_model": "@cf/openai/gpt-oss-120b",
+    "vision_model": "@cf/meta/llama-4-scout-17b-16e-instruct",
+    "daily_neuron_limit": 10000
+  },
+  "publication_routes": [
+    {
+      "hour": 12,
+      "category_ids": [
+        7
+      ],
+      "tag_ids": []
+    },
+    {
+      "hour": 14,
+      "category_ids": [
+        7,
+        1710
+      ],
+      "tag_ids": []
+    },
+    {
+      "hour": 18,
+      "category_ids": [
+        7
+      ],
+      "tag_ids": []
+    }
+  ]
+}

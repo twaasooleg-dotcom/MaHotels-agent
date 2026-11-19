@@ -1,0 +1,5 @@
+requests>=2.32,<3
+trafilatura>=2,<3
+Pillow>=11,<14
+tzdata
+truststore>=0.10,<1
